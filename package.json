@@ -4,8 +4,13 @@
   "private": true,
   "homepage": "http://khuong291.github.io/home",
   "dependencies": {
+    "antd": "^3.3.3",
+    "babel": "^6.23.0",
     "react": "^16.3.0",
-    "react-dom": "^16.3.0"
+    "react-animations": "^1.0.0",
+    "react-dom": "^16.3.0",
+    "react-fa": "^5.0.0",
+    "styled-components": "^3.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
