@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import * as Colors from '../constants/colors';
 import { Icon } from 'react-fa';
-import { fade, pulse } from 'react-animations';
+import { pulse } from 'react-animations';
 
 class LinkedButton extends React.Component {
   constructor(props) {
@@ -36,7 +36,7 @@ class LinkedButton extends React.Component {
 const pulser = keyframes`${pulse}`;
 
 const LinkIcon = styled(Icon)`
-  font-size: 40px;
+  font-size: 3vw;
   color: ${Colors.midGray};
   margin: 10px 10px 0 0;
   text-align: center;
