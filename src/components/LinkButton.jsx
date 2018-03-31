@@ -36,14 +36,14 @@ class LinkedButton extends React.Component {
 const pulser = keyframes`${pulse}`;
 
 const LinkIcon = styled(Icon)`
-  font-size: 3vw;
+  font-size: 33px;
   color: ${Colors.midGray};
   margin: 10px 10px 0 0;
   text-align: center;
 `;
 
 const LinkIconHighlighted = LinkIcon.extend`
-  color: ${Colors.red};
+  color: ${Colors.base};
   animation: 1s ${pulser} alternate infinite;
 `;
 

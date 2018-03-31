@@ -53,14 +53,14 @@ const Container = styled.div`
   display: flex;
   justify-content: left;
   padding: 20px 0 20px 0;
+  background-color: white;
 `;
 
 const Avatar = styled.img`
-  width: 15vw;
-  height: 15vw;
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
   margin: 0 0 0 60px;
-  border: 0.4vw solid ${Colors.red};
   animation: 1s ${zoomer};
 `;
 
@@ -72,7 +72,7 @@ const InfoBox = styled.div`
 `;
 
 const NameLabel = styled.h1`
-  font-size: 4vw;
+  font-size: 40px;
   color: ${Colors.darkGray};
   font-weight: bold;
   text-align: left;
@@ -80,7 +80,7 @@ const NameLabel = styled.h1`
 `;
 
 const JobLabel = styled.h2`
-  font-size: 2vw;
+  font-size: 30px;
   color: ${Colors.midGray};
   text-align: left;
   margin: -1em 0 0 0;

@@ -4568,7 +4568,7 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "~3.0.0"
 
-lodash.throttle@^4.0.0:
+lodash.throttle@4.1.1, lodash.throttle@^4.0.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
 
@@ -6253,6 +6253,12 @@ react-scripts@1.0.7:
     whatwg-fetch "2.0.3"
   optionalDependencies:
     fsevents "1.0.17"
+
+react-skillbars@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/react-skillbars/-/react-skillbars-1.5.0.tgz#791c4ee154645de19f9bd117652c7ad37fdae3ea"
+  dependencies:
+    lodash.throttle "4.1.1"
 
 react-slick@~0.21.0:
   version "0.21.0"
