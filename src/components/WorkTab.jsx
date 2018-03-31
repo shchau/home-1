@@ -2,6 +2,10 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import * as Colors from '../constants/colors';
 import TabButton from './TabButton';
+import CompanyProjects from './CompanyProjects';
+import PersonalProjects from './PersonalProjects';
+import ProgrammingArticles from './ProgramingArticles';
+import Libraries from './Libraries';
 
 var TabStates = {
   companyProjects: 1,
@@ -26,6 +30,21 @@ class WorkTab extends React.Component {
 
     console.log(tabStates);
   };
+
+  renderContent(tabStates) {
+    switch (tabStates) {
+      case TabStates.companyProjects:
+        return <CompanyProjects />;
+      case TabStates.personalProjects:
+        return <PersonalProjects />;
+      case TabStates.programmingArticles:
+        return <ProgrammingArticles />;
+      case TabStates.iOSLibraries:
+        return <Libraries />;
+      default:
+        return <div />;
+    }
+  }
 
   render() {
     return (
@@ -61,6 +80,7 @@ class WorkTab extends React.Component {
             }}
           />
         </Tabs>
+        {this.renderContent(this.state.tabStates)}
       </Container>
     );
   }

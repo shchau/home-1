@@ -18,7 +18,7 @@ class About extends React.Component {
           <br /> <br />I have 3 years experience on iOS development which I
           developed some apps used for hundreds of thousands users. And now I am
           learning ReactJS, I realize that the best way to learn is by doing, so
-          I decided to create this website write entirely with ReactJS.
+          I decided to create this website written entirely with ReactJS.
         </Description>
       </Container>
     );
