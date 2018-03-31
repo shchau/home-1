@@ -40,6 +40,7 @@ const Container = styled.div`
   justify-content: left;
   background-color: white;
   padding: 5px 30px 30px 30px;
+  border-radius: 8px;
 `;
 
 const Title = styled.h1`

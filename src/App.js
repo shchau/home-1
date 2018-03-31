@@ -13,8 +13,10 @@ class App extends Component {
         <Grid>
           <LeftColumn>
             <Profile.About />
+            <Profile.WorkTab />
           </LeftColumn>
           <RightColumn>
+            <Profile.Contact />
             <Profile.Skill />
           </RightColumn>
         </Grid>

@@ -19,13 +19,13 @@ class LinkedButton extends React.Component {
           <LinkIcon
             name={this.props.imageName}
             onMouseEnter={() => this.setState({ mouseIsOn: true })}
-            onMouseLeave={() => this.setState({ mouseIsOn: false })}
+            onMouseOut={() => this.setState({ mouseIsOn: false })}
           />
         ) : (
           <LinkIconHighlighted
             name={this.props.imageName}
             onMouseEnter={() => this.setState({ mouseIsOn: true })}
-            onMouseLeave={() => this.setState({ mouseIsOn: false })}
+            onMouseOut={() => this.setState({ mouseIsOn: false })}
           />
         )}
       </a>

@@ -80,7 +80,7 @@ const NameLabel = styled.h1`
 `;
 
 const JobLabel = styled.h2`
-  font-size: 30px;
+  font-size: 20px;
   color: ${Colors.midGray};
   text-align: left;
   margin: -1em 0 0 0;
