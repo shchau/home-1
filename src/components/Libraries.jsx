@@ -8,11 +8,6 @@ class Libraries extends React.Component {
       <Container>
         <ul style={{ textAlign: 'left' }}>
           <li>
-            <LibraryLink href="https://github.com/khuong291/100DaysOfSwift">
-              100 Days Of Swift
-            </LibraryLink>
-          </li>
-          <li>
             <LibraryLink href="https://github.com/khuong291/MagicPresent">
               Magic Present
             </LibraryLink>
@@ -28,13 +23,13 @@ class Libraries extends React.Component {
             </LibraryLink>
           </li>
           <li>
-            <LibraryLink href="https://github.com/khuong291/Croppy">
-              Croppy (Incomplete)
+            <LibraryLink href="https://github.com/khuong291/Binder">
+              Binder
             </LibraryLink>
           </li>
           <li>
-            <LibraryLink href="https://github.com/khuong291/Binder">
-              Binder (Incomplete)
+            <LibraryLink href="https://github.com/khuong291/Croppy">
+              Croppy (Incomplete)
             </LibraryLink>
           </li>
         </ul>
