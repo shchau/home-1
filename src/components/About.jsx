@@ -32,7 +32,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: left;
   background-color: white;
-  padding: 5px 30px 30px 30px;
+  padding: 15px 30px 30px 30px;
   border-radius: 8px;
 `;
 

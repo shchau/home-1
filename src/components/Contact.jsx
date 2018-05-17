@@ -26,6 +26,10 @@ class Contact extends React.Component {
 }
 
 const Container = styled.div`
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -45,7 +49,7 @@ const LocationLabel = styled.h2`
 const ContactIcon = styled(Icon)`
   font-size: 16px;
   color: ${Colors.midGray};
-  margin: 10px 10px 0 0;
+  margin-right: 10px;
   text-align: center;
 `;
 

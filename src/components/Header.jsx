@@ -49,6 +49,10 @@ const zoomer = keyframes`${zoomIn}`;
 const lightSpeeder = keyframes`${lightSpeedIn}`;
 
 const Container = styled.div`
+  @media (max-width: 768px) {
+    height: auto;
+  }
+
   height: 200px;
   display: flex;
   justify-content: left;
@@ -57,10 +61,16 @@ const Container = styled.div`
 `;
 
 const Avatar = styled.img`
-  width: 190px;
-  height: 190px;
+  @media (max-width: 768px) {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+  }
+
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
-  margin: 0 0 0 60px;
+  margin-left: 60px;
   animation: 1s ${zoomer};
 `;
 
@@ -72,6 +82,10 @@ const InfoBox = styled.div`
 `;
 
 const NameLabel = styled.h1`
+  @media (max-width: 768px) {
+    font-size: 17px;
+  }
+
   font-size: 40px;
   color: ${Colors.darkGray};
   font-weight: bold;
@@ -80,10 +94,14 @@ const NameLabel = styled.h1`
 `;
 
 const JobLabel = styled.h2`
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
   font-size: 20px;
   color: ${Colors.midGray};
   text-align: left;
-  margin: -1em 0 0 0;
+  margin: 2px 0 0 0;
   animation: 2s ${lightSpeeder};
 `;
 

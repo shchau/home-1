@@ -27,26 +27,41 @@ class App extends Component {
 
 const Container = styled.div`
   background-color: ${Colors.background};
-  padding: 0 0 50px 0;
+  padding: 0 0 30px 0;
 `;
 
 const Grid = styled.div`
+  @media (max-width: 768px) {
+    margin: 20px 20px 0 20px;
+    display: block;
+    flex-direction: none;
+  }
+
   display: flex;
   flex-direction: row;
   margin: 40px 40px 0 40px;
 `;
 
 const LeftColumn = styled.div`
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
   display: flex;
   flex-direction: column;
   width: 60%;
 `;
 
 const RightColumn = styled.div`
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-left: 0px;
+  }
+
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin: 0 0 0 20px;
+  margin-left: 20px;
 `;
 
 export default App;

@@ -36,6 +36,10 @@ class LinkedButton extends React.Component {
 const pulser = keyframes`${pulse}`;
 
 const LinkIcon = styled(Icon)`
+  @media (max-width: 768px) {
+    font-size: 17px;
+  }
+
   font-size: 33px;
   color: ${Colors.midGray};
   margin: 10px 10px 0 0;

@@ -49,6 +49,10 @@ const Container = styled.div`
 `;
 
 const LibraryLink = styled.a`
+  @media (max-width: 425px) {
+    font-size: 10px;
+  }
+
   font-size: 20px;
   color: ${Colors.textTitle};
   font-weight: bold;

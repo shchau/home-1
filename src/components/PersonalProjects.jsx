@@ -57,6 +57,11 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
+  @media (max-width: 425px) {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+
   font-size: 20px;
   color: ${Colors.textTitle};
   font-weight: bold;

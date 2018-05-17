@@ -24,6 +24,10 @@ class TabButton extends React.Component {
 }
 
 const Button = styled.button`
+  @media (max-width: 425px) {
+    font-size: 10px;
+  }
+
   font-size: 18px;
   background-color: ${Colors.background};
   color: ${Colors.textTitle}
