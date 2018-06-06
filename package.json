@@ -2,7 +2,7 @@
   "name": "home",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.khuongpham.net",
+  "homepage": "https://khuong291.github.io",
   "dependencies": {
     "babel": "^6.23.0",
     "react": "^16.3.0",
