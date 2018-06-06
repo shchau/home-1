@@ -2,7 +2,7 @@
   "name": "home",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://khuong291.github.io",
+  "homepage": "http://khuong291.github.io/home",
   "dependencies": {
     "babel": "^6.23.0",
     "react": "^16.3.0",
