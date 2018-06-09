@@ -7,38 +7,23 @@ class PersonalProjects extends React.Component {
     return (
       <Container>
         <ProjectDiv>
-          <img
-            height="42"
-            src="http://is2.mzstatic.com/image/thumb/Purple128/v4/ea/ed/a1/eaeda1d2-6e76-69e4-79d2-4332ab0ffa99/source/100x100bb.jpg"
-          />
+          <img height="42" src="guessit.jpg" />
           <Title>Guess It - Word Picture Puzzle</Title>
         </ProjectDiv>
         <ProjectDiv>
-          <img
-            height="42"
-            src="http://is4.mzstatic.com/image/thumb/Purple118/v4/46/5c/01/465c01db-0d05-e882-bbd6-d3b1da0bd36e/source/175x175bb.jpg"
-          />
+          <img height="42" src="giothanhle.jpg" />
           <Title>GioThanhle</Title>
         </ProjectDiv>
         <ProjectDiv>
-          <img
-            height="42"
-            src="https://lh3.googleusercontent.com/9c_otUOtS18B17BXJKPW3IS3X9IY3f4Oa8MeUmrVAS5NBmdPoRM_ZFgYIDnjWLDIpQZQ=s360-rw"
-          />
+          <img height="42" src="guessfootballer.jpg" />
           <Title>Guess The Footballer</Title>
         </ProjectDiv>
         <ProjectDiv>
-          <img
-            height="42"
-            src="https://lh3.googleusercontent.com/RFHhrmnicle3V6wPhrRvdezSZ3H8tm99aNRofJL0HelGKi3spkM7qrjMm-B4BRRMdg=s360-rw"
-          />
+          <img height="42" src="ease.jpg" />
           <Title>Ease</Title>
         </ProjectDiv>
         <ProjectDiv>
-          <img
-            height="42"
-            src="https://lh3.googleusercontent.com/S3Yk4k8WrVEq3zNUOAY9evuU1nhOAjOOa6UlPn1iwLr_xzVp795-fLTRbMkmDZ-Itg=s360-rw"
-          />
+          <img height="42" src="mathduelfight.jpg" />
           <Title>Math Duel Fight</Title>
         </ProjectDiv>
       </Container>
