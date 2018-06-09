@@ -96,12 +96,13 @@ const NameLabel = styled.h1`
 const JobLabel = styled.h2`
   @media (max-width: 768px) {
     font-size: 12px;
+    margin: 2px 0 0 0;
   }
 
   font-size: 20px;
   color: ${Colors.midGray};
   text-align: left;
-  margin: 2px 0 0 0;
+  margin: -10px 0 0 0;
   animation: 2s ${lightSpeeder};
 `;
 

@@ -5,7 +5,6 @@ import { Icon } from 'react-fa';
 import LinkButton from './LinkButton';
 import SkillBar from 'react-skillbars';
 import { Tag } from 'antd';
-import { DatePicker } from 'antd';
 import { zoomIn } from 'react-animations';
 
 class Skill extends React.Component {
@@ -51,7 +50,7 @@ class Skill extends React.Component {
           <PopupTag color="#d3adf7">Heroku</PopupTag>
           <PopupTag color="#10239e">Photoshop</PopupTag>
           <PopupTag color="#d48806">Object Oriented Programming</PopupTag>
-          <PopupTag color="#ffa39e">Protocol Priented Programming</PopupTag>
+          <PopupTag color="#ffa39e">Protocol Oriented Programming</PopupTag>
           <PopupTag color="#9e1068">Functional Reactive Programming</PopupTag>
         </div>
       </Container>
