@@ -27,8 +27,6 @@ class WorkTab extends React.Component {
     this.setState({
       tabStates: tabStates,
     });
-
-    console.log(tabStates);
   };
 
   renderContent(tabStates) {
