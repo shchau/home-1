@@ -1,16 +1,21 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import * as Colors from '../constants/colors';
-import { Icon } from 'react-fa';
+import * as React from "react";
+import styled from "styled-components";
+import * as Colors from "../constants/colors";
 
-class TabButton extends React.Component {
-  onClick = () => {
+interface IProps {
+  onClick: () => void;
+  title: string;
+  isSelected: boolean;
+}
+
+class TabButton extends React.Component<IProps> {
+  public onClick = () => {
     this.props.onClick();
-  };
+  }
 
-  render() {
+  public render() {
     return (
-      <div styled={{ width: '25%', height: 50 }}>
+      <Container>
         {this.props.isSelected ? (
           <ButtonHighlighted onClick={this.onClick}>
             {this.props.title}
@@ -18,7 +23,7 @@ class TabButton extends React.Component {
         ) : (
           <Button onClick={this.onClick}>{this.props.title}</Button>
         )}
-      </div>
+      </Container>
     );
   }
 }
@@ -30,7 +35,7 @@ const Button = styled.button`
 
   font-size: 18px;
   background-color: ${Colors.background};
-  color: ${Colors.textTitle}
+  color: ${Colors.textTitle};
   text-align: center;
   border: none;
   outline: none;
@@ -42,6 +47,11 @@ const Button = styled.button`
 const ButtonHighlighted = Button.extend`
   background-color: ${Colors.base};
   color: white;
+`;
+
+const Container = styled.div`
+  width: "25%";
+  height: 50px;
 `;
 
 export default TabButton;

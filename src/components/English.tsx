@@ -1,15 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import * as Colors from '../constants/colors';
+import * as React from "react";
+import styled from "styled-components";
+import * as Colors from "../constants/colors";
 
 class About extends React.Component {
-  render() {
+  public render() {
     return (
       <Container>
         <Title>English</Title>
-        <Description>
-          
-        </Description>
+        <Description />
       </Container>
     );
   }

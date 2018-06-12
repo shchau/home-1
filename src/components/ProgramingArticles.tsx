@@ -1,12 +1,12 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import * as Colors from '../constants/colors';
+import * as React from "react";
+import styled from "styled-components";
+import * as Colors from "../constants/colors";
 
 class ProgramingArticles extends React.Component {
-  render() {
+  public render() {
     return (
       <Container>
-        <ul style={{ textAlign: 'left' }}>
+        <ul style={{ textAlign: "left" }}>
           <li>
             <ArticleLink href="https://medium.com/@dkhuong291/rxswift-with-mvvm-e4af71413298">
               RxSwift with MVVM

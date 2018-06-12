@@ -1,35 +1,38 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import * as Colors from '../constants/colors';
-import TabButton from './TabButton';
-import CompanyProjects from './CompanyProjects';
-import PersonalProjects from './PersonalProjects';
-import ProgrammingArticles from './ProgramingArticles';
-import Libraries from './Libraries';
+import * as React from "react";
+import styled from "styled-components";
+import * as Colors from "../constants/colors";
+import CompanyProjects from "./CompanyProjects";
+import Libraries from "./Libraries";
+import PersonalProjects from "./PersonalProjects";
+import ProgrammingArticles from "./ProgramingArticles";
+import TabButton from "./TabButton";
 
-var TabStates = {
-  companyProjects: 1,
-  personalProjects: 2,
-  programmingArticles: 3,
-  iOSLibraries: 4,
-};
-Object.freeze(TabStates);
+enum TabStates {
+  companyProjects = 1,
+  personalProjects = 2,
+  programmingArticles = 3,
+  iOSLibraries = 4,
+}
 
-class WorkTab extends React.Component {
-  constructor(props) {
+interface IStates {
+  tabStates: TabStates;
+}
+
+class WorkTab extends React.Component<{}, IStates> {
+  constructor(props: {}) {
     super(props);
     this.state = {
       tabStates: TabStates.companyProjects,
     };
   }
 
-  onClick = tabStates => {
+  public onClick = (tabStates: TabStates) => {
     this.setState({
-      tabStates: tabStates,
+      tabStates,
     });
-  };
+  }
 
-  renderContent(tabStates) {
+  public renderContent(tabStates: TabStates) {
     switch (tabStates) {
       case TabStates.companyProjects:
         return <CompanyProjects />;
@@ -44,7 +47,7 @@ class WorkTab extends React.Component {
     }
   }
 
-  render() {
+  public render() {
     return (
       <Container>
         <Title>My Works</Title>

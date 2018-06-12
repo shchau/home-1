@@ -1,19 +1,17 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import * as Colors from '../constants/colors';
-import { Icon } from 'react-fa';
-import { zoomIn, lightSpeedIn } from 'react-animations';
-import LinkButton from './LinkButton';
+import * as React from "react";
+import styled from "styled-components";
+import * as Colors from "../constants/colors";
+import LinkButton from "./LinkButton";
 
 class Header extends React.Component {
-  render() {
+  public render() {
     return (
       <Container>
         <Avatar src="https://avatars2.githubusercontent.com/u/11523438?s=460&v=4" />
         <InfoBox>
           <NameLabel>Khuong Pham</NameLabel>
           <JobLabel>iOS and ReactJS Developer</JobLabel>
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
+          <div style={{ display: "flex", flexDirection: "row" }}>
             <LinkButton
               link="https://github.com/khuong291"
               imageName="fab fa-github"
@@ -45,9 +43,6 @@ class Header extends React.Component {
   }
 }
 
-const zoomer = keyframes`${zoomIn}`;
-const lightSpeeder = keyframes`${lightSpeedIn}`;
-
 const Container = styled.div`
   @media (max-width: 768px) {
     height: auto;
@@ -71,7 +66,6 @@ const Avatar = styled.img`
   height: 160px;
   border-radius: 50%;
   margin-left: 60px;
-  animation: 1s ${zoomer};
 `;
 
 const InfoBox = styled.div`
@@ -90,7 +84,6 @@ const NameLabel = styled.h1`
   color: ${Colors.darkGray};
   font-weight: bold;
   text-align: left;
-  animation: 1s ${lightSpeeder};
 `;
 
 const JobLabel = styled.h2`
@@ -103,7 +96,6 @@ const JobLabel = styled.h2`
   color: ${Colors.midGray};
   text-align: left;
   margin: -10px 0 0 0;
-  animation: 2s ${lightSpeeder};
 `;
 
 export default Header;

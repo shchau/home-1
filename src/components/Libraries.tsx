@@ -1,12 +1,12 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import * as Colors from '../constants/colors';
+import * as React from "react";
+import styled from "styled-components";
+import * as Colors from "../constants/colors";
 
 class Libraries extends React.Component {
-  render() {
+  public render() {
     return (
       <Container>
-        <ul style={{ textAlign: 'left' }}>
+        <ul style={{ textAlign: "left" }}>
           <li>
             <LibraryLink href="https://github.com/khuong291/MagicPresent">
               Magic Present

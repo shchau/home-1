@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import styled from 'styled-components';
-import * as Colors from './constants/colors';
-import * as Profile from './components/index';
+import * as React from "react";
+import styled from "styled-components";
+import "./App.css";
+import * as Profile from "./components/index";
+import * as Colors from "./constants/colors";
 
-class App extends Component {
-  render() {
+class App extends React.Component {
+  public render() {
     return (
       <Container className="App">
         <Profile.Header />

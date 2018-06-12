@@ -1,11 +1,10 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import * as Colors from '../constants/colors';
-import { Icon } from 'react-fa';
-import LinkButton from './LinkButton';
+import * as React from "react";
+import { Icon } from "react-fa";
+import styled from "styled-components";
+import * as Colors from "../constants/colors";
 
 class Contact extends React.Component {
-  render() {
+  public render() {
     return (
       <Container>
         <ContactDiv>
@@ -15,7 +14,7 @@ class Contact extends React.Component {
         <ContactDiv>
           <ContactIcon name="fal fa-envelope" />
           <LocationLabel>
-            <a style={{ color: '#686464' }} href="dkhuong291@gmail.com">
+            <a style={{ color: "#686464" }} href="dkhuong291@gmail.com">
               dkhuong291@gmail.com
             </a>
           </LocationLabel>

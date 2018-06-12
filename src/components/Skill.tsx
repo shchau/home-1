@@ -1,36 +1,33 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import * as Colors from '../constants/colors';
-import { Icon } from 'react-fa';
-import LinkButton from './LinkButton';
-import SkillBar from 'react-skillbars';
-import { Tag } from 'antd';
-import { zoomIn } from 'react-animations';
+import { Tag } from "antd";
+import * as React from "react";
+import styled from "styled-components";
+import * as Colors from "../constants/colors";
+// import SkillBar from "react-skillbars";
 
 class Skill extends React.Component {
-  render() {
+  public render() {
     const skills = [
-      { type: 'Swift', level: 90 },
-      { type: 'ObjectiveC', level: 82 },
-      { type: 'JavaScript', level: 87 },
-      { type: 'TypeScript', level: 84 },
-      { type: 'Java', level: 71 },
-      { type: 'HTML5', level: 81 },
-      { type: 'CSS3', level: 83 },
+      { type: "Swift", level: 90 },
+      { type: "ObjectiveC", level: 82 },
+      { type: "JavaScript", level: 87 },
+      { type: "TypeScript", level: 84 },
+      { type: "Java", level: 71 },
+      { type: "HTML5", level: 81 },
+      { type: "CSS3", level: 83 },
     ];
 
     const colors = {
       bar: Colors.skillBar,
       title: {
-        text: Colors.white,
         background: Colors.skillBackground,
+        text: Colors.white,
       },
     };
 
     return (
       <Container>
         <Title>Skills</Title>
-        <SkillBar colors={colors} skills={skills} />
+        {/* <SkillBar colors={colors} skills={skills} /> */}
         <br />
         <div>
           <PopupTag color="#40a9ff">iOS Development</PopupTag>
@@ -58,8 +55,6 @@ class Skill extends React.Component {
   }
 }
 
-const zoomer = keyframes`${zoomIn}`;
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -78,7 +73,6 @@ const Title = styled.h1`
 
 const PopupTag = styled(Tag)`
   margin-bottom: 6px;
-  animation: 1s ${zoomer};
 `;
 
 export default Skill;

@@ -1,34 +1,30 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import * as Colors from '../constants/colors';
+import * as React from "react";
+import styled from "styled-components";
+import * as Colors from "../constants/colors";
 
-class CompanyProjects extends React.Component {
-  render() {
+class PersonalProjects extends React.Component {
+  public render() {
     return (
       <Container>
         <ProjectDiv>
-          <img height="42" src="sourcesage.jpg" />
-          <Title>SourceSage</Title>
+          <img height="42" src="guessit.jpg" />
+          <Title>Guess It - Word Picture Puzzle</Title>
         </ProjectDiv>
         <ProjectDiv>
-          <img height="42" src="jhkelly.jpg" />
-          <Title>JHKelly</Title>
+          <img height="42" src="giothanhle.jpg" />
+          <Title>GioThanhle</Title>
         </ProjectDiv>
         <ProjectDiv>
-          <img height="42" src="360live.png" />
-          <Title>360Live</Title>
+          <img height="42" src="guessfootballer.jpg" />
+          <Title>Guess The Footballer</Title>
         </ProjectDiv>
         <ProjectDiv>
-          <img height="42" src="ryde.png" />
-          <Title>Ryde Sharing</Title>
+          <img height="42" src="ease.jpg" />
+          <Title>Ease</Title>
         </ProjectDiv>
         <ProjectDiv>
-          <img height="42" src="sistic.jpg" />
-          <Title>Sistic</Title>
-        </ProjectDiv>
-        <ProjectDiv>
-          <img height="42" src="odibly.png" />
-          <Title>Odibly</Title>
+          <img height="42" src="mathduelfight.jpg" />
+          <Title>Math Duel Fight</Title>
         </ProjectDiv>
       </Container>
     );
@@ -63,4 +59,4 @@ const ProjectDiv = styled.div`
   flex-direction: row;
 `;
 
-export default CompanyProjects;
+export default PersonalProjects;

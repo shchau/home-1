@@ -1,12 +1,9 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import * as Colors from '../constants/colors';
-import { Icon } from 'react-fa';
-import { fadeInLeft } from 'react-animations';
-import LinkButton from './LinkButton';
+import * as React from "react";
+import styled from "styled-components";
+import * as Colors from "../constants/colors";
 
-class About extends React.Component {
-  render() {
+export default class About extends React.Component {
+  public render() {
     return (
       <Container>
         <Title>About Me</Title>
@@ -25,8 +22,6 @@ class About extends React.Component {
   }
 }
 
-const fader = keyframes`${fadeInLeft}`;
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -41,15 +36,11 @@ const Title = styled.h1`
   color: ${Colors.textTitle};
   font-weight: bold;
   text-align: left;
-  animation: 1s ${fader};
 `;
 
 const Description = styled.h2`
   font-size: 18px;
   color: ${Colors.textDescription};
   text-align: left;
-  animation: 2s ${fader};
   font-weight: lighter;
 `;
-
-export default About;

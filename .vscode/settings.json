@@ -14,7 +14,9 @@
   "javascript.validate.enable": false,
   "javascript.format.enable": false,
   "prettier.eslintIntegration": true,
-  "prettier.singleQuote": true,
+  "prettier.singleQuote": false,
   "prettier.trailingComma": "es5",
-  "prettier.printWidth": 80
+  "prettier.printWidth": 80,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wrappingIndent": "same"
 }
