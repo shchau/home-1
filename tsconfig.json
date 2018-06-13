@@ -1,7 +1,6 @@
 {
 	"compilerOptions": {
 		"baseUrl": ".",
-		"outDir": "./dist/",
 		"allowSyntheticDefaultImports": true,
 		"experimentalDecorators": true,
 		"jsx": "react",
