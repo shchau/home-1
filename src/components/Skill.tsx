@@ -39,8 +39,11 @@ class Skill extends React.Component {
 					<PopupTag color="#722ed1">Git</PopupTag>
 					<PopupTag color="#ff4d4f">Cocoapods</PopupTag>
 					<PopupTag color="#5cdbd3">Bootstrap</PopupTag>
+					<PopupTag color="#D81D0D">TravisCI</PopupTag>
+					<PopupTag color="#E3C135">Babel</PopupTag>
 					<PopupTag color="#7EBBEB">Webpack</PopupTag>
 					<PopupTag color="#5F37B6">Redux</PopupTag>
+					<PopupTag color="#F45129">SCSS</PopupTag>
 					<PopupTag color="#ff85c0">Responsive Design</PopupTag>
 					<PopupTag color="#95de64">MongoDB</PopupTag>
 					<PopupTag color="#1890ff">MySQL</PopupTag>
