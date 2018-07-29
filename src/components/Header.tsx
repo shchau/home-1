@@ -33,7 +33,7 @@ class Header extends React.Component {
 							imageName="fab fa-facebook"
 						/>
 						<LinkButton
-							link="https://www.linkedin.com/in/khuong-pham-7b1635108"
+							link="https://www.linkedin.com/in/khuong-pham-kenny-7b1635108"
 							imageName="fab fa-linkedin"
 						/>
 					</div>
