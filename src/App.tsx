@@ -13,12 +13,10 @@ class App extends React.Component {
           <LeftColumn>
             <Profile.About />
             <Profile.WorkTab />
-            <Profile.English />
           </LeftColumn>
           <RightColumn>
             <Profile.Contact />
             <Profile.Skill />
-            <Profile.Idols />
           </RightColumn>
         </Grid>
       </Container>
