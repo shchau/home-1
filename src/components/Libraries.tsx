@@ -8,28 +8,28 @@ class Libraries extends React.Component {
       <Container>
         <ul style={{ textAlign: "left" }}>
           <li>
+            <LibraryLink href="https://github.com/khuong291/react-notification">
+              React Notification (ReactJS)
+            </LibraryLink>
+          </li>
+          <li>
             <LibraryLink href="https://github.com/khuong291/MagicPresent">
-              Magic Present
+              Magic Present (iOS)
             </LibraryLink>
           </li>
           <li>
             <LibraryLink href="https://github.com/khuong291/KPActionSheet">
-              KPActionSheet
+              KPActionSheet (iOS)
             </LibraryLink>
           </li>
           <li>
             <LibraryLink href="https://github.com/khuong291/KPImageView">
-              KPImageView
+              KPImageView (iOS)
             </LibraryLink>
           </li>
           <li>
             <LibraryLink href="https://github.com/khuong291/Binder">
-              Binder
-            </LibraryLink>
-          </li>
-          <li>
-            <LibraryLink href="https://github.com/khuong291/Croppy">
-              Croppy (Incomplete)
+              Binder (iOS)
             </LibraryLink>
           </li>
         </ul>

@@ -11,7 +11,7 @@ enum TabStates {
   companyProjects = 1,
   personalProjects = 2,
   programmingArticles = 3,
-  iOSLibraries = 4,
+  libraries = 4,
 }
 
 interface IStates {
@@ -40,7 +40,7 @@ class WorkTab extends React.Component<{}, IStates> {
         return <PersonalProjects />;
       case TabStates.programmingArticles:
         return <ProgrammingArticles />;
-      case TabStates.iOSLibraries:
+      case TabStates.libraries:
         return <Libraries />;
       default:
         return <div />;
@@ -74,10 +74,10 @@ class WorkTab extends React.Component<{}, IStates> {
             }}
           />
           <TabButton
-            isSelected={this.state.tabStates === TabStates.iOSLibraries}
-            title="iOS Libraries"
+            isSelected={this.state.tabStates === TabStates.libraries}
+            title="Libraries"
             onClick={() => {
-              this.onClick(TabStates.iOSLibraries);
+              this.onClick(TabStates.libraries);
             }}
           />
         </Tabs>

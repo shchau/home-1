@@ -8,36 +8,19 @@ interface IProps {
 	imageName: string;
 }
 
-interface IStates {
-	mouseIsOn: boolean;
-}
-
-class LinkedButton extends React.Component<IProps, IStates> {
-	constructor(props: IProps) {
-		super(props);
-		this.state = {
-			mouseIsOn: false,
-		};
-	}
-
-	public render() {
-		return (
-			<a href={this.props.link}>
-				<LinkIcon
-					size="2x"
-					name={this.props.imageName}
-					onMouseEnter={() => this.setState({ mouseIsOn: true })}
-					onMouseOut={() => this.setState({ mouseIsOn: false })}
-				/>
-			</a>
-		);
-	}
-}
+const LinkedButton: React.SFC<IProps> = props => (
+	<a href={props.link}>
+		<LinkIcon size="2x" name={props.imageName} />
+	</a>
+);
 
 const LinkIcon = styled(Icon)`
 	color: ${Colors.midGray};
 	margin: 10px 10px 0 0;
 	text-align: center;
+	:hover {
+		color: ${Colors.base};
+	}
 `;
 
 export default LinkedButton;
